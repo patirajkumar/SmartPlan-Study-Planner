@@ -1,0 +1,161 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?fit=crop&w=1500&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: whitesmoke;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px black;
+    width: 100%;
+    max-width: 900px;
+}
+
+h1 {
+    font-size: 3em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px black;
+    text-align: center;
+    color: #333333;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input, select {
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    border-left: 5px solid #4CAF50;
+}
+
+li span {
+    font-weight: 500;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+button.complete, button.delete {
+    margin: 10px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+button.complete {
+  background-color: #3498db;
+}
+
+button.delete {
+  background-color: #e74c3c;
+}
+
+canvas {
+    width: 100%;
+    max-height: 300px;
+    margin-top: 15px;
+}
+
+#calendar {
+    margin-top: 20px;
+}
+
+/* Mobile View */
+@media (max-width: 600px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    input, select, button {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    li {
+        font-size: 14px;
+    }
+
+    button.complete, button.delete {
+        width: 100%;
+    }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .container {
+    padding: 20px;
+  }
+
+  input, select, button {
+    font-size: 16px;
+  }
+
+  button.complete, button.delete {
+    width: 48%;
+    margin: 2px 1%;
+  }
+
+  li {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
